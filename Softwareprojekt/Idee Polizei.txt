@@ -1,0 +1,63 @@
+polizei
+
+
+liste mit postleitzahlen, zweite liste mit gefahrenstufe von den postleitzahlen 1-10.
+
+1. option bei prompt: gefahrenstufe ändern oder eingeben wo es besonders sicher oder unsicher ist.
+
+2. option: leute (polizisten) zuteilen
+
+3. option: polizisten können ihren partner bewerten um die optimale zusammen arbeitenden kollegen zu finden, und diese werden danach auch zusammen eingeteilt
+
+4. option: es wird ausgegeben, welche polizisten gerade wo sind
+
+
+
+beispiel: programm zeigt an wieviele polizisten heute aktiv sind, aber auch zb krank. dann gibt es bestimmte bezirke in denen es sicherer ist, 
+dort werden weniger polizisten eingesetzt, und bezirke in denen es unsicher ist wo es mehr polizisten gibt 
+
+
+
+erweiterung: polizei hat e autos, deren ladestände und reichweite werden angezeigt und vom programm gesteuert
+
+
+andere idee noch: nach feierabend können die polizisten eingeben, wo es sicher ist und wo problembezirke sind
+
+programmplan:
+
+1. liste mit 5 unterschiedlichen postleitzahlen
+2. jede postleitzahl bekommt eine gefahrenstufe zugewiesen
+3. variable für anzahl der polizisten erstellen
+
+Jan: variable erstellen, zufällig wird ausgegeben, wieviele polizisten krank und wie viele verfügbar sind.
+ 
+Adrian: anzahl an polizisten werden zugeteilt zu bestimmten plz je nachdem wie gefährlich es ist
+
+Adam: wenn man "location" eingibt, wird ausgegeben, wo welcher polizist gerade ist
+
+erweiterung 1: am ende können polizisten ihre kollegen bewerten
+
+erweiterung 2: nach feierabend können die polizisten eingeben, wo es sicher ist und wo problembezirke sind
+
+erweiterung 3: 
+
+
+
+
+daten wo es wie gefährlich ist kommen von einer app der bürger
+
+
+
+
+gps von polizisten
+bewohner sagen wie sicher sie sich fühlen
+
+
+
+
+
+
+
+
+
+

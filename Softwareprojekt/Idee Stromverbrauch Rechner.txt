@@ -1,0 +1,260 @@
+Gerne! Der **Stromverbrauchs-Rechner** ist ein tolles Python-Projekt, das sowohl nützlich als auch gut verständlich und umsetzbar ist – ideal für die 10. Klasse.
+
+---
+
+## ⚡ Stromverbrauchs-Rechner – Projektüberblick
+
+### 🧩 **Problem**
+
+Viele Haushalte wissen nicht, wie viel Strom ihre Geräte verbrauchen oder welche Geräte "Stromfresser" sind. Das führt zu unnötigem Energieverbrauch und hohen Kosten.
+
+### 🎯 **Ziel**
+
+Ein einfaches Python-Programm, mit dem Nutzer\:innen eingeben können:
+
+* welches Gerät sie nutzen (z. B. Fernseher, Wasserkocher),
+* wie viele Stunden pro Tag/Woche es genutzt wird,
+* ggf. die Wattzahl des Geräts (Leistungsaufnahme).
+
+Das Programm berechnet dann:
+
+* den **Stromverbrauch (kWh)**,
+* die **Kosten (bei z. B. 30 Cent/kWh)**,
+* den **CO₂-Ausstoß (z. B. 0,4 kg CO₂/kWh)**.
+
+---
+
+## 💻 Beispielhafte Programmlogik (vereinfacht)
+
+```python
+# Beispielwerte
+strompreis = 0.30  # Euro pro kWh
+co2_pro_kwh = 0.4  # kg CO₂
+
+# Eingabe
+geraet = input("Welches Gerät willst du berechnen? ")
+leistung_watt = float(input("Wie viel Watt hat das Gerät? "))
+stunden = float(input("Wie viele Stunden läuft es pro Tag? "))
+
+# Berechnung
+verbrauch_kwh = (leistung_watt / 1000) * stunden * 365
+kosten = verbrauch_kwh * strompreis
+co2 = verbrauch_kwh * co2_pro_kwh
+
+# Ausgabe
+print(f"\nJährlicher Verbrauch für {geraet}:")
+print(f"{verbrauch_kwh:.2f} kWh")
+print(f"{kosten:.2f} Euro")
+print(f"{co2:.2f} kg CO₂")
+```
+
+---
+
+## 🌱 Erweiterungsmöglichkeiten
+
+### 1. **Geräte-Datenbank**
+
+* Vordefinierte Geräte mit typischen Wattzahlen (z. B. Toaster – 1000 W, Kühlschrank – 150 W).
+* Auswahl aus einer Liste statt manueller Eingabe.
+
+### 2. **GUI (Grafische Oberfläche)**
+
+* Mit `tkinter` oder `streamlit` eine Benutzeroberfläche bauen:
+
+  * Dropdown für Geräte
+  * Eingabefelder für Zeit
+  * Button zum Berechnen
+  * Grafische Ausgabe (z. B. Balkendiagramm)
+
+### 3. **Vergleich mehrerer Geräte**
+
+* Nutzer kann mehrere Geräte hinzufügen.
+* Ausgabe zeigt den Gesamtverbrauch und eine Sortierung (z. B. welches Gerät verursacht die meisten Kosten?).
+
+### 4. **Energiespartipps**
+
+* Nach der Berechnung gibt das Programm Tipps wie:
+
+  * „Durch Wechsel auf LED kannst du 80 % sparen.“
+  * „Wasserkocher nur halb füllen = weniger Stromverbrauch.“
+
+### 5. **CO₂-Vergleich**
+
+* Vergleich der CO₂-Werte mit bekannten Werten:
+
+  * „Das entspricht einer Autofahrt von 200 km.“
+  * „So viel CO₂ bindet ein Baum in 2 Jahren.“
+
+---
+
+## 📈 Warum ist das Projekt sinnvoll?
+
+* Verbindet Informatik mit Umweltbildung.
+* Erhöht das Bewusstsein für Energieverbrauch im Alltag.
+* Praktisch einsetzbar – auch in der Familie oder Schule.
+
+---
+
+Möchtest du eine Vorlage oder ein Starterprojekt mit GUI, Geräteliste oder Diagramm?
+
+
+
+
+
+
+
+
+
+
+
+
+
+erweiterung:
+
+angeben ob man elektroauto oder wärmepumpe hat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hier ist ein **strukturierter Entwicklungsplan** für dein Python-Projekt **„Stromverbrauchs-Rechner“** – ideal für eine 10. Klasse und gut geeignet für Präsentation oder Abgabe.
+
+---
+
+## 📅 **Entwicklungsplan – Stromverbrauchs-Rechner**
+
+---
+
+### **1. Projektvorbereitung (Tag 1–2)**
+
+#### ✅ Ziel definieren
+
+* Ein Programm, das den Stromverbrauch, die Kosten und den CO₂-Ausstoß von Haushaltsgeräten berechnet.
+
+#### ✅ Anforderungen festlegen
+
+* Einfache Benutzereingabe (Gerät, Watt, Nutzungsdauer)
+* Automatische Berechnung
+* Ausgabe in kWh, Euro und CO₂
+* Erweiterbar
+
+---
+
+### **2. Datenrecherche & Planung (Tag 2–3)**
+
+#### 🔍 Daten sammeln
+
+* Typische Wattzahlen gängiger Geräte (Toaster, Fernseher, Kühlschrank ...)
+* Strompreis (z. B. 0,30 €/kWh)
+* CO₂-Wert pro kWh (z. B. 0,4 kg)
+
+#### 🧠 Programmstruktur überlegen
+
+* Eingabe → Verarbeitung → Ausgabe
+* Optional: Gerätedaten als Wörterbuch speichern
+
+---
+
+### **3. Erste Code-Version (Tag 4–5)**
+
+#### 👩‍💻 Basisfunktionen entwickeln
+
+* Eingabe: Gerät, Watt, Stunden pro Tag
+* Berechnung:
+
+  ```python
+  verbrauch_kwh = (watt / 1000) * stunden_pro_tag * 365
+  kosten = verbrauch_kwh * 0.30
+  co2 = verbrauch_kwh * 0.4
+  ```
+* Ausgabe formatieren
+
+#### ✅ Testen & Fehler beheben
+
+---
+
+### **4. Geräte-Datenbank einbauen (Tag 6–7)**
+
+#### 📦 Datenstruktur erstellen
+
+```python
+geraete = {
+  "Fernseher": 100,
+  "Kühlschrank": 150,
+  "Wasserkocher": 2000,
+  "Toaster": 1000
+}
+```
+
+#### 🎛 Auswahl per Menü
+
+* Nutzer wählt aus Geräteliste oder gibt eigene Wattzahl an
+
+---
+
+### **5. Benutzerfreundlichkeit verbessern (Tag 8–9)**
+
+#### ✨ Zusatzfunktionen
+
+* Mehrere Geräte nacheinander eingeben
+* Zusammenfassung aller Geräte am Ende
+
+#### 🛠 Fehlerbehandlung
+
+* Bei falscher Eingabe Hinweis anzeigen
+
+---
+
+### **6. Erweiterung: GUI oder Diagramme (optional, Tag 10–12)**
+
+#### 🖥 GUI mit `tkinter` oder `streamlit`
+
+* Fenster mit Feldern und Buttons
+* Ausgabe schön formatiert
+
+#### 📊 Diagramme mit `matplotlib`
+
+* Balkendiagramm: Stromverbrauch pro Gerät
+
+---
+
+### **7. Dokumentation & Präsentation (Tag 13–14)**
+
+#### 📃 Projektbeschreibung
+
+* Problem, Ziel, Funktionsweise, Ergebnisse
+
+#### 💡 Präsentationsfolie oder Plakat
+
+* Eingabe-Beispiel, Screenshot, Diagramm
+
+---
+
+## ✅ **Abgabe/Präsentation – Ziele**
+
+* Code funktioniert zuverlässig
+* Nutzer\:innen können das Tool intuitiv bedienen
+* Du kannst erklären, wie das Programm aufgebaut ist
+* Umweltaspekt ist klar: Warum Stromsparen wichtig ist
+
+---
+
+Möchtest du eine Beispiel-Geräteliste oder eine einfache GUI-Vorlage mit eingebautem Rechner?
+

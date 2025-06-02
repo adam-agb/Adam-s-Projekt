@@ -1,0 +1,11 @@
+straßen laternen und ampeln werden gesteuert
+
+daten kommen von einem lautstärke sensor
+
+die software rechnet aus, wann durchschnittlich um wieviel uhr nachts zwischen sonnenuntergang und sonnenaufgang meistens autos vorbei fahren
+
+anhand dieser werte werden die lampen dann an und ab geschaltet
+
+wenn der sensor einen lautstärke von über 120 db wahrnimmt, wird automatisch der notruf gerufen, da von einem autounfall ausgegangen wird
+
+es wird ausgerechnet, wie viele autos auf der straße sind und dadurch wird die zeit, wie lange die ampel grün ist, berechnet
